@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="Container">
+  <view class="tutubar">
+    <image class="tutu" src="../../images/tutu.png"></image>
+  </view>
+  <view class="signinPanel">
+    <view class="title">妙宠萌屋签到领取宠粮规则说明</view>
+    <view class="ruleBar">
+      <view class="ruleTitle">签到得宠粮奖励：</view>
+      <view class="ruletext">第一天首次签到，可以领取10g宠粮；</view>
+      <view class="ruletext">第二天连续签到，可以领取20g宠粮；</view>
+      <view class="ruletext">第三天连续签到，可以领取30g宠粮；</view>
+      <view class="ruletext">第四天连续签到，可以领取40g宠粮；</view>
+      <view class="ruletext">连续大于等于五天时，每天签到可以领取50g宠粮。</view>
+    </view>
+    <view class="ruleBar">
+      <view class="ruleTitle">签到中断说明：</view>
+      <view class="ruletext">签到按天计算，用户中断签到则重新按照第一天开始计算签到天数和奖励。</view>
+    </view>
+  </view>
+</view>

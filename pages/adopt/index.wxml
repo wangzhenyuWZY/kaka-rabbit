@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<view class="adoptContainer">
+  <view class="adoptTips">
+    <view>亲爱的铲屎官</view>
+    <view>欢迎来到萌宠爱心基地【妙宠萌屋】</view>
+    <view class="pt20">一直以来，妙宠萌屋致力为流浪动物提供关爱救助服务，呼吁当下年轻人关注流浪动物，以力所能及的行动来保护那些流浪的动物。</view> 
+    <view class="pt20">在妙宠萌屋，您可以领养一只可爱的萌宠，领养萌宠所带来的关爱及成长，都能为现实中的流浪动物提供一份爱心帮助。奉献一份力所能及的爱，保护流浪动物们！</view>
+  </view>
+  <view class="cardbar">
+    <view class="name">卡萌兔</view>
+    <image src="../../images/rabbit.png" class="tuzi"></image>
+  </view>
+  <view class="toadopt">
+    <image class="adoptbtn" src="../../images/btn.png" bindtap="showPop"></image>
+  </view>
+  <!--弹框-->
+  <view class="popwrap" hidden="{{!adoptPop}}">
+    <view class="popInner">
+      <view class="closeico" bindtap="closePop"></view>
+      <view class="title">领取成功</view>
+      <view class="popCon">
+        <image class="rabbitimg" src="../../images/rabbit1.png"></image>
+        <p class="text">请为您的爱宠命名</p>
+        <input class="nameput" model:value="{{name}}"></input>
+        <view class="confirm">
+          <image src="../../images/btn6.png" class="btn" bindtap="doAdopt"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--新人礼-->
+  <view class="popwrap" hidden="{{!newpeople}}">
+    <view class="popInner">
+      <view class="title">新人礼</view>
+      <view class="popCon">
+        <view class="lovetext">感谢您的关爱
+          <view>妙宠萌屋为您赠上一份新人关爱礼，</view>
+          接下来让我们一起开启萌宠生涯！</view>
+        <view class="foods">
+          <image src="../../images/pen.png" class="pen"></image>
+          <text class="foodtext">（100g宠粮）</text>
+        </view>  
+        <view class="confirm">
+          <image src="../../images/btn7.png" class="btn" bindtap="goHome"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

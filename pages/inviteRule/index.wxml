@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="Container">
+  <view class="tutubar">
+    <image class="tutu" src="../../images/tutu.png"></image>
+  </view>
+  <view class="signinPanel">
+    <view class="title">妙宠萌屋邀请好友领宠粮规则说明</view>
+    <view class="ruleBar">
+      <view class="ruleTitle">邀请得宠粮奖励：</view>
+      <view class="ruletext">1.分享好友邀请页，好友成功登录并领取萌宠后，即可获得50g宠粮；</view>
+      <view class="ruletext">2.邀请好友人数不限制，邀请好友获得宠粮上不封顶；</view>
+    </view>
+    <view class="ruleBar">
+      <view class="ruleTitle">无效邀请声明：</view>
+      <view class="ruletext">分享邀请页给予好友，如好友登录却未领取萌宠，则视为无效邀请，需好友领取萌宠后才可获得奖励。</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class="Container">
+  <view class="rulebtn" bindtap="toRule">规则</view>
+  <view class="ivtop">
+    <image class="topimg" src="../../images/ivtimg.png"></image>
+    <view class="ivtips">邀请的好友成功领取爱宠，可获得50g宠粮</view>
+  </view>
+  <view class="title">我的邀请</view>
+  <view class="ivtPanel">
+    <view class="ivtlist">
+      <view class="ivtItem">
+        <view class="ivtitle">分享次数</view>
+        <view class="num">20次</view>
+      </view>
+      <view class="ivtItem">
+        <view class="ivtitle">成功注册好友人数</view>
+        <view class="num">10人</view>
+      </view>
+    </view>
+  </view>
+  <view class="title">成功注册人数</view>
+  <view class="ivtPanel">
+    <view class="thead">
+      <view class="th">昵称</view>
+      <view class="th">注册时间</view>
+    </view>
+    <view class="tbody">
+      <view class="useritem">
+        <view class="username">用户授权昵称</view>
+        <view class="time">2021/10/08 13:50:12</view>
+      </view>
+    </view>
+  </view>
+  <view class="btns">
+    <image class="btn" src="../../images/btn3.png"></image>
+    <image class="btn" src="../../images/btn4.png"></image>
+  </view>
+</view>

@@ -1,0 +1,521 @@
+/**index.wxss**/
+.Container{
+  min-height : 100vh;
+  background: linear-gradient(226deg, #B3F5FF 0%, #99F1FF 100%);
+  padding:15px 8px;
+  box-sizing:border-box;
+}
+.kindness{
+  display:flex;
+  justify-content: flex-start;
+}
+.headimg{
+    border:5px solid #fff;
+    border-radius:5px;
+    overflow:hidden;
+}
+.img{
+  border:3px solid #72D2FF;
+}
+.head{
+  width:37px;
+  height:auto;
+}
+.hert{
+  height:auto;
+  margin-left:8px;
+  width:32px;
+  height:25px;
+}
+.kindness .val{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+.kindness .val image{
+  width:32px;
+}
+.kindness .val .kindsval{
+  padding:0 14px 0 22px;
+  background:rgba(0,0,0,0.3);
+  font-size:14px;
+  color:#fff;
+  font-weight:600;
+  line-height:34px;
+  border-radius:5px;
+  position:relative;
+  left:-8px;
+}
+.menuTab{
+  position:absolute;
+  right:15px;
+  top:30px;
+  z-index:9;
+}
+.menuTab .menuItem{
+  position:relative;
+  margin-bottom:15px;
+}
+.menuTab .menuItem .menuCon .menuImg{
+  width:36px;
+  height:36px;
+}
+.menuTab .menuItem .menuCon .menuTitle{
+  font-size:10px;
+  line-height:14px;
+  color:#fff;
+  text-align:center;
+}
+.homePanel{
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  height:463px;
+  background:url(https://me2-mai.oss-cn-shenzhen.aliyuncs.com/mini-prog/images/bg1.png) no-repeat center;
+  background-size:100% 100%;
+  display:flex;
+  justify-content: center;
+}
+.homeico{
+  position:absolute;
+  width:97px;
+  height:82px;
+  top:92px;
+  left:18px;
+}
+.homePanel .status{
+  width:120px;
+  height:16px;
+  background:rgba(0,0,0,0.3);
+  border:1px solid #820000;
+  border-radius:10px;
+  position:relative;
+}
+.homePanel .status .cur{
+  background:#FF404B;
+  height:100%;
+  border-right:1px solid #820000;
+  border-radius:10px;
+}
+.homePanel .status .text{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:0;
+  text-align:center;
+  font-size:9px;
+  color:#FFFFFF;
+  line-height:13px;
+}
+.homePanel .rabbitImg{
+  margin-top:12px;
+  margin-bottom:2px;
+}
+.homePanel .rabbitImg .on{
+  width:122px;
+  height:178px;
+}
+.homePanel .name{
+  padding:4px 10px;
+  background:rgba(0,0,0,0.3);
+  font-size:14px;
+  color:#fff;
+  line-height:20px;
+  border-radius:9px;
+  text-align:center;
+}
+
+.popWrap{
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background:rgba(0,0,0,0.8);
+  z-index:999;
+}
+.popWrap .popInner{
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  height:356px;
+  padding:0 10px;
+  text-align:center;
+  background:url(https://me2-mai.oss-cn-shenzhen.aliyuncs.com/mini-prog/images/popbg.png) no-repeat center;
+  background-size:100% 100%;
+}
+.popWrap .popInner .popTitle{
+  width:143px;
+  height:42px;
+  margin-top: -14px;
+}
+.popInner .popCon{
+  padding-top:12px;
+}
+.popCon .signinPanel{
+  padding:6px 10px 8px 20px;
+  background:#fff;
+  border-radius:5px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  position:relative;
+}
+.signinPanel .receive{
+  width:66px;
+  height:21px;
+  line-height:21px;
+  text-align:center;
+  background:#FFB635;
+  color:#fff;
+  border-radius:10px;
+  font-size:12px;
+}
+.signinPanel .receive.isCheckin{
+  background:none;
+  color:#533302;
+}
+.signinPanel .que{
+  position:absolute;
+  width:13px;
+  height:13px;
+  top:6px;
+  right:9px;
+}
+.signinPanel .foodList{
+  display:flex;
+  justify-content: flex-start;
+  width:80%;
+  padding-top:6px;
+}
+.foodList .foodItem{
+  position:relative;
+  margin-right:12px;
+}
+.foodItem .pen{
+  width:30px;
+  height:27px;
+}
+.foodItem .nums{
+  width:31px;
+  height:11px;
+  line-height:11px;
+  border-radius:5px;
+  background:#FFB635;
+  margin-top:7px;
+  text-align:center;
+  font-size:7px;
+}
+.foodItem.isCheckin .nums{
+  background:#FFDA8F;
+}
+.foodItem .day{
+  font-size:9px;
+  color:#A26A52;
+  line-height:100%;
+  padding-top:6px;
+}
+.foodItem .line{
+  position:absolute;
+  width:14px;
+  height:4px;
+  background:#EDA039;
+  top:14px;
+  right:-14px;
+}
+.invitePanel{
+  padding:20px 14px;
+  background:#6DCCA0;
+  border-radius:5px;
+  display:flex;
+  justify-content: space-between;
+  position:relative;
+  text-align:left;
+  margin:10px 0;
+  align-items: center;
+}
+.invitePanel.adverPanel{
+  background:#FFBB4C;
+  margin:0;
+}
+.invitePanel.adverPanel .receivebar .receivebtn{
+  color:#FFBB4C;
+}
+.invitePanel .icon{
+  width:36px;
+  height:36px;
+}
+.invitePanel .require{
+  width:170px;
+  margin-left:14px;
+  margin-right:26px;
+}
+.invitePanel .require .h2{
+  font-size:13px;
+  color:#FFFFFF;
+  line-height:18px;
+  padding-bottom:3px;
+}
+.invitePanel .require .p{
+  font-size:11px;
+  color:#fff;
+  line-height:15px;
+}
+.invitePanel .receivebar .dogfood{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size:9px;
+  color:#FFFFFF;
+  line-height:13px;
+  margin-bottom:9px;
+}
+.invitePanel .receivebar .dogfood .pen{
+  width:30px;
+  height:27px;
+  margin-right:5px;
+}
+.invitePanel .receivebar .receivebtn{
+  width:66px;
+  height:21px;
+  line-height:21px;
+  background:#fff;
+  text-align:center;
+  font-size:12px;
+  color:#6DCCA0;
+  border-radius:10px;
+}
+
+/**********/
+.circleProgress_wrapper{
+  width: 50px;
+  height: 50px;
+  margin: 50px auto;
+  position: absolute;
+  bottom:34px;
+  right:34px;
+  background:#4C2914;
+  border-radius:25px;
+}
+.circleProgress_wrapper .pen{
+  width: 34px;
+    height: 34px;
+    position: absolute;
+    z-index: 999;
+    left: 8px;
+    top: 8px;
+}
+.circleProgress_wrapper .numg{
+  font-size:13px;
+  color:#FFFFFF;
+  line-height:100%;
+  position:absolute;
+  bottom:-6px;
+  width:100%;
+  text-align:center;
+}
+.wrapper{
+  width: 25px;
+  height: 50px;
+  position: absolute;
+  top:0;
+  overflow: hidden;
+}
+.right{
+  right:0;
+}
+.left{
+  left:0;
+}
+.circleProgress{
+  width: 40px;
+  height: 40px;
+  border:5px solid rgb(232, 232, 12);
+  border-radius: 50%;
+  position: absolute;
+  top:0;
+  -webkit-transform: rotate(45deg);
+}
+.rightcircle{
+  border-top:5px solid #A26A52;
+  border-right:5px solid #A26A52;
+  right:0;
+  -webkit-animation: circleProgressLoad_right 5s linear infinite;
+}
+.leftcircle{
+  border-bottom:5px solid #A26A52;
+  border-left:5px solid #A26A52;
+  left:0;
+  -webkit-animation: circleProgressLoad_left 5s linear infinite;
+}
+@-webkit-keyframes circleProgressLoad_right{
+  0%{
+      border-top:5px solid #ED1A1A;
+      border-right:5px solid #ED1A1A;
+      -webkit-transform: rotate(45deg);
+  }
+  50%{
+      border-top:5px solid rgb(232, 232, 12);
+      border-right:5px solid rgb(232, 232, 12);
+      border-left:5px solid rgb(81, 197, 81);
+      border-bottom:5px solid rgb(81, 197, 81);
+      -webkit-transform: rotate(225deg);
+  }
+  100%{
+      border-left:5px solid green;
+      border-bottom:5px solid green;
+      -webkit-transform: rotate(225deg);
+  }
+}
+@-webkit-keyframes circleProgressLoad_left{
+  0%{
+      border-bottom:5px solid #ED1A1A;
+      border-left:5px solid #ED1A1A;
+      -webkit-transform: rotate(45deg);
+  }
+  50%{
+      border-bottom:5px solid rgb(232, 232, 12);
+      border-left:5px solid rgb(232, 232, 12);
+      border-top:5px solid rgb(81, 197, 81);
+      border-right:5px solid rgb(81, 197, 81);
+      -webkit-transform: rotate(45deg);
+  }
+  100%{
+      border-top:5px solid green;
+      border-right:5px solid green;
+      border-bottom:5px solid green;
+      border-left:5px solid green;
+      -webkit-transform: rotate(225deg);
+  }
+}
+/**********/
+
+.backpackPop{
+  height:484px;
+  background:#fff;
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  border-top-left-radius: 27px;
+  border-top-right-radius:27px;
+  padding:0 14px;
+}
+.backpackPop .logo{
+  text-align:center;
+  margin-top:-45px;
+}
+.backpackPop .logo .packlogo{
+  width:91px;
+  height:93px;
+}
+.backpackPop .closeico{
+  position:absolute;
+  width:27px;
+  height:27px;
+  right:14px;
+  top:14px;
+}
+.backpackPop .titlebox{
+  padding-top:10px;
+  border-bottom:1px solid #DFDFDF;
+  position:relative;
+}
+.backpackPop .titlebox .packname{
+  width:43px;
+  padding-bottom:9px;
+  text-align:center;
+  margin:0 auto;
+  font-size:13px;
+  color:#FFBB4C;
+  line-height:18px;
+}
+.backpackPop .titlebox .tips{
+  position:absolute;
+  right:5px;
+  top:13px;
+}
+.backpackPop .titlebox .tips .que{
+  width:13px;
+  height:13px;
+}
+.backpackPop .packCon .penList{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:20px 0;
+}
+.penList .penItem{
+  margin-bottom:20px;
+  text-align:center;
+}
+.penList .penItem .pen{
+  width:36px;
+  height:33px;
+}
+.penList .penItem .num{
+  padding-top:10px;
+  font-size:11px;
+  color:#363636;
+  line-height:15px;
+}
+.frameWrap{
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index:999;
+}
+.frameWrap .frameInner{
+  width:314px;
+  height:400px;
+  margin:15% auto;
+  background:url(https://me2-mai.oss-cn-shenzhen.aliyuncs.com/mini-prog/images/sucPop.png) no-repeat center;
+  background-size:100% 100%;
+  position: relative;
+}
+.frameWrap .frameInner .title{
+  font-size:22px;
+  color:#FFFFFF;
+  line-height:26px;
+  text-align:center;
+  padding-top:24px;
+}
+.frameWrap .frameInner .popCon{
+  text-align:center;
+}
+.frameInner .closeico{
+  position:absolute;
+  top:20px;
+  right:10px;
+  width:40px;
+  height:40px;
+}
+.popCon .confirm{
+  margin-top:20px;
+}
+.popCon .confirm .btn{
+  width:175px;
+  height:38px;
+  margin-top:40px;
+}
+.popCon .lovetext{
+  font-size:13px;
+  color:#fff;
+  line-height:20px;
+  width:40%;
+  text-align:center;
+  margin:120px auto 0;
+}
+.frameInner .closeico{
+  position:absolute;
+  top:40px;
+  right:20px;
+  width:40px;
+  height:40px;
+}

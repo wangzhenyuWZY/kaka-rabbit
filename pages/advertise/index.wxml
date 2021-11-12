@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="Container">
+  <view class="tutubar">
+    <image class="tutu" src="../../images/tutu.png"></image>
+  </view>
+  <view class="signinPanel">
+    <view class="title">妙宠萌屋浏览视频领宠粮规则说明</view>
+    <view class="ruleBar">
+      <view class="ruleTitle">浏览视频得宠粮奖励：</view>
+      <view class="ruletext">1.妙宠萌屋携手商家合作贡献一份爱心，合作收益将资助流浪宠物；</view>
+      <view class="ruletext">2.萌宠主人浏览视频5-15秒，即可获得50g宠粮；</view>
+      <view class="ruletext">3.每天浏览视频获得宠粮次数封顶为10次；</view>
+    </view>
+    <view class="ruleBar">
+      <view class="ruleTitle">无效浏览声明：</view>
+      <view class="ruletext">如浏览视频不足5秒，则判定为无效浏览，本次浏览不做次数统计。</view>
+    </view>
+  </view>
+  <view class="watchbar">
+    <image class="btn" src="../../images/btn1.png"></image>
+    <view class="watchtip">今日领奖励浏览次数：（0/10)次</view>
+  </view>
+</view>

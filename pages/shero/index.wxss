@@ -1,0 +1,65 @@
+/**index.wxss**/
+.Container{
+  min-height : 100vh;
+  background: linear-gradient(226deg, #B3F5FF 0%, #99F1FF 100%);
+  padding:25px 25px;
+  position:relative;
+}
+.sherobg{
+  width:100%;
+  height:90vh;
+}
+.sheroInfos{
+  position:absolute;
+  width:282px;
+  height:88px;
+  bottom:100px;
+  left:50%;
+  margin-left:-141px;
+  background:#fff;
+  border-radius:5px;
+  box-sizing: border-box;
+  display:flex;
+  justify-content: space-between;
+  padding:16px 10px 12px 14px;
+}
+.sheroInfos .qrcode{
+  width:60px;
+  height:60px;
+  background:#D8D8D8;
+  margin-right:15px;
+}
+.sheroInfos .sheroUser{
+  width:70%;
+}
+.sheroInfos .sheroUser .top{
+  display:flex;
+  justify-content: space-between;
+  font-size:11px;
+  color:#333333;
+  line-height:20px;
+}
+.sheroInfos .sheroUser .name{
+  font-size:13px;
+  color:#333333;
+  font-weight:bold;
+  padding-left:20px;
+  position:relative;
+}
+.sheroUser .name:after{
+  position:absolute;
+  content:'';
+  left:0;
+  top:0;
+  width:15px;
+  height:15px;
+  border-radius:50%;
+  border:1px solid #979797;
+  background:#D8D8D8;
+}
+.sheroInfos .btm{
+  font-size:11px;
+  color:#333333;
+  line-height:16px;
+  padding-top:10px;
+}

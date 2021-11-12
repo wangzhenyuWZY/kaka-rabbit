@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="Container">
+  <view class="dynamiclist">
+    <view class="synamicitem" wx:for="{{messageList}}">
+      <text class="title">{{item.created_at}}</text>
+      <view class="text">{{item.message}}</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="Container">
+  <image class="sherobg" src="../../images/sheroBg.png"></image>
+  <view class="sheroInfos">
+    <view class="qrcode"></view>
+    <view class="sheroUser">
+      <view class="top">
+        <view class="name">分享者昵称</view>
+        <text>正在拯救流浪动物</text>
+      </view>
+      <view class="btm">
+        长按小程序码，进入XX平台一起拯救流浪动物
+      </view>
+    </view>
+  </view>
+</view>

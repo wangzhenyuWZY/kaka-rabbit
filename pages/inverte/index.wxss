@@ -1,0 +1,110 @@
+/**index.wxss**/
+.Container{
+  min-height : 100vh;
+  background: linear-gradient(226deg, #B3F5FF 0%, #99F1FF 100%);
+  padding:15px 8px;
+}
+.ivtop{
+  text-align:center;
+  padding-top:44px;
+}
+.ivtop .topimg{
+  width:286px;
+  height:56px;
+}
+.ivtop .ivtips{
+  width:280px;
+  height:32px;
+  border-radius:15px;
+  background:#60BCDF;
+  font-size:13px;
+  color:#333;
+  line-height:32px;
+  margin:7px auto 0;
+}
+.title{
+  padding-top:18px;
+  padding-bottom:10px;
+  font-size:13px;
+  color:#333;
+  line-height:18px;
+}
+.ivtPanel{
+  background:#fff;
+  border-radius:5px;
+}
+.ivtPanel .ivtlist{
+  padding:20px;
+  display:flex;
+  justify-content: space-between;
+}
+.ivtPanel .ivtlist .ivtItem .ivtitle{
+  font-size:11px;
+  color:#BEBEBE;
+  line-height:15px;
+  padding-bottom:10px;
+}
+.ivtPanel .ivtlist .ivtItem .num{
+  font-size:13px;
+  color:#333333;
+  line-height:18px;
+  text-align:center;
+  font-weight:400;
+}
+.ivtPanel .thead{
+  border-bottom:1px solid #DFDFDF;
+  display:flex;
+  justify-content: space-between;
+}
+.ivtPanel .thead .th{
+  font-size:11px;
+  color:#7C7C7C;
+  line-height:15px;
+  padding:13px 18px 10px;
+}
+.ivtPanel .thead .th:last-child{
+  padding-right: 48px;
+}
+.ivtPanel .tbody{
+  padding:12px 18px;
+}
+.ivtPanel .tbody .useritem{
+  display:flex;
+  justify-content: space-between;
+  padding-bottom:10px;
+}
+.ivtPanel .tbody .useritem .username{
+  font-size:13px;
+  color:#333333;
+  line-height:18px;
+}
+.ivtPanel .tbody .useritem .time{
+  font-size:11px;
+  color:#5C5C5C;
+  line-height:18px;
+}
+.btns{
+  display:flex;
+  justify-content: center;
+  padding-top:18px;
+}
+.btns .btn{
+  width:155px;
+  height:43px;
+  margin:0 5px;
+}
+.rulebtn{
+  position:absolute;
+  right:0;
+  border-radius:5px 0 0 5px;
+  top:20px;
+  background:rgba(255,255,255,0.77);
+  font-size:12px;
+  color:#820000;
+  line-height: 15px;
+  text-align:center;
+  width:24px;
+  height:40px;
+  padding:4px 5px;
+  box-sizing: border-box;
+}

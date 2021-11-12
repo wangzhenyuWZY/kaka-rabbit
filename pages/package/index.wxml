@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="Container">
+  <view class="tutubar">
+    <image class="tutu" src="../../images/tutu.png"></image>
+  </view>
+  <view class="signinPanel">
+    <view class="title">背包说明</view>
+    <view class="ruleBar">
+      <view class="ruleTitle">背包的作用：</view>
+      <view class="ruletext">背包可用于存储萌宠日常使用宠粮，后续可存储更多道具。</view>
+    </view>
+    <view class="ruleBar">
+      <view class="ruleTitle">宠粮的作用：</view>
+      <view class="ruletext">宠粮是提升爱宠与主人亲密度的必备物, 1g宠粮可以提升1点亲密度，每次投喂100g宠粮。</view>
+    </view>
+    <view class="ruleBar">
+      <view class="ruleTitle">如何获得宠粮：</view>
+      <view class="ruletext">宠粮可以通过每日签到、邀请好友一起玩、观看广告视频获得。</view>
+    </view>
+  </view>
+</view>

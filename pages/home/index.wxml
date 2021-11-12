@@ -1,0 +1,192 @@
+<!--index.wxml-->
+<view class="Container">
+    <view class="kindness">
+      <view class="headimg">
+        <view class="img">
+          <image class="head"></image>
+        </view>
+      </view>
+      <view class="val">
+        <image class="hert" src="../../images/hert.png"></image>
+        <view class="kindsval" bindtap="showFriendPop">{{dogeInfo.friendship}}</view>
+      </view>
+    </view>
+    <view class="menuTab">
+      <view class="menuItem">
+        <view class="menuCon" bindtap="showReceivePop">
+          <image class="menuImg" src="../../images/tabimg1.png"></image>
+          <view class="menuTitle">领宠粮</view>
+        </view>
+      </view>
+      <view class="menuItem">
+        <view class="menuCon" bindtap="showFoodPop">
+          <image class="menuImg" src="../../images/tabimg2.png"></image>
+          <view class="menuTitle">背包</view>
+        </view>
+      </view>
+      <view class="menuItem">
+        <view class="menuCon" bindtap="toDynamic">
+          <image class="menuImg" src="../../images/tabimg3.png"></image>
+          <view class="menuTitle">动态</view>
+        </view>
+      </view>
+    </view>
+    <view class="homePanel">
+      <image class="homeico" src="../../images/homeimg1.png"></image>
+      <!--进度条-->
+      <view class="circleProgress_wrapper" bindtap="feeding">
+        <view class="wrapper right">
+            <view class="circleProgress rightcircle"></view>
+        </view>
+        <view class="wrapper left">
+            <view class="circleProgress leftcircle"></view>
+        </view>
+        <image class="pen" src="../../images/pen.png"></image>
+        <view class="numg">{{itemInfo.amount}}g</view>
+      </view>
+      <!--进度条-->
+      <view class="rabbitCon">
+        <view class="status">
+          <view class="cur" style="width: {{dogeInfo.headlth/120*100}} %;"></view>
+          <view class="text">健康值 {{dogeInfo.headlth}}/120 (生龙活虎)</view>
+        </view>
+        <view class="rabbitImg">
+          <image class="on" src="../../images/rabbit1.png"></image>
+          <imgge class="off" src=""></imgge>
+        </view>
+        <view class="name">{{dogeInfo.name}}</view>
+      </view>
+    </view>
+    <!--领取宠粮-->
+    <view class="popWrap" hidden="{{!receivePop}}" bindtap="closeReceivePop">
+      <view class="popInner" catchtap>
+        <image class="popTitle" src="../../images/btn5.png"></image>
+        <view class="popCon">
+          <!--每日领取-->
+          <view class="signinPanel">
+            <image class="que" src="../../images/quesition.png" bindtap="toRules"></image>
+            <view class="foodList">
+              <view class="{{checkin_level>0?'foodItem isCheckin':'foodItem'}}">
+                <image class="pen" src="../../images/pen.png"></image>
+                <view class="nums">30g</view>
+                <view class="day">第一天</view>
+                <view class="line"></view>
+              </view>
+              <view class="{{checkin_level>1?'foodItem isCheckin':'foodItem'}}">
+                <image class="pen" src="../../images/pen.png"></image>
+                <view class="nums">60g</view>
+                <view class="day">第二天</view>
+                <view class="line"></view>
+              </view>
+              <view class="{{checkin_level>2?'foodItem isCheckin':'foodItem'}}">
+                <image class="pen" src="../../images/pen.png"></image>
+                <view class="nums">120g</view>
+                <view class="day">第三天</view>
+                <view class="line"></view>
+              </view>
+              <view class="{{checkin_level>3?'foodItem isCheckin':'foodItem'}}">
+                <image class="pen" src="../../images/pen.png"></image>
+                <view class="nums">120g</view>
+                <view class="day">第四天</view>
+                <view class="line"></view>
+              </view>
+              <view class="{{checkin_level>4?'foodItem isCheckin':'foodItem'}}">
+                <image class="pen" src="../../images/pen.png"></image>
+                <view class="nums">11150g</view>
+                <view class="day">第五天</view>
+              </view>
+            </view>
+            <view bindtap="doCheckin" class="{{checkin?'isCheckin receive':'receive'}}">{{checkin?'已领取':'领取'}}</view>
+          </view>
+          <!--邀请领取-->
+          <view class="invitePanel">
+            <image class="icon" src="../../images/icon1.png"></image>
+            <view class="require" bindtap="toInvite">
+              <view class="h2">邀请好友领取宠粮</view>
+              <view class="p">每邀请一个好友领养爱宠，即可领取50g宠粮</view>
+            </view>
+            <view class="receivebar">
+              <view class="dogfood">
+                <image class="pen" src="../../images/pen.png"></image>
+                x50g
+              </view>
+              <view class="receivebtn">领取</view>
+            </view>
+          </view>
+          <!--广告领取-->
+          <view class="invitePanel adverPanel">
+            <image class="icon" src="../../images/icon2.png"></image>
+            <view class="require">
+              <view class="h2">浏览视频领取宠粮</view>
+              <view class="p">每浏览一个视频广告，即可领取50g宠粮</view>
+            </view>
+            <view class="receivebar">
+              <view class="receivebtn" bindtap="toWatch">立即观看</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!--宠零背包-->
+    <view class="popWrap" hidden="{{!foodPop}}" bindtap="closeFoodPop">
+      <view class="backpackPop" catchtap>
+        <image class="closeico" src="../../images/closeico.png" bindtap="closeFoodPop"></image>
+        <view class="logo">
+          <image src="../../images/packlogo.png" class="packlogo"></image>
+        </view>
+        <view class="titlebox">
+          <view class="packname">饲料</view>
+          <view class="tips" bindtap="toPacTip">
+            <image class="que" src="../../images/quesition.png"></image>
+          </view>
+        </view>
+        <view class="packCon">
+          <view class="penList">
+            <view class="penItem">
+              <image class="pen" src="../../images/pen.png"></image>
+              <view class="num">宠粮x{{itemInfo.amount}}g</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!--亲密度说明-->
+    <view class="frameWrap" hidden="{{!friendPop}}">
+      <view class="frameInner">
+        <view class="closeico" bindtap="closeFriendPop"></view>
+        <view class="title">亲密度说明</view>
+        <view class="popCon">
+          <view class="lovetext">亲密度可通过主人给爱宠喂食而增加。</view>
+          <view class="confirm">
+            <image src="../../images/btn8.png" class="btn" bindtap="closeFriendPop"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!--喂食成功-->
+    <view class="frameWrap" hidden="{{!feedPop}}">
+      <view class="frameInner">
+        <view class="closeico" bindtap="closeFeedPop"></view>
+        <view class="title">喂食成功</view>
+        <view class="popCon">
+          <view class="lovetext">{{sucMsg}}</view>
+          <view class="confirm">
+            <image src="../../images/btn8.png" class="btn" bindtap="closeFeedPop"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!--喂食失败-->
+    <view class="frameWrap" hidden="{{!feedFaildPop}}">
+      <view class="frameInner">
+        <view class="closeico" bindtap="closeFeedFaildPop"></view>
+        <view class="title">喂食失败</view>
+        <view class="popCon">
+          <view class="lovetext">{{sucMsg}}</view>
+          <view class="confirm">
+            <image src="../../images/btn8.png" class="btn" bindtap="closeFeedFaildPop"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+</view>

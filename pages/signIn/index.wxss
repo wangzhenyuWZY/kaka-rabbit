@@ -1,0 +1,54 @@
+/**index.wxss**/
+.Container{
+  min-height : 100vh;
+  background: linear-gradient(226deg, #B3F5FF 0%, #99F1FF 100%);
+  padding:15px 8px;
+}
+.signinPanel{
+  background:#fff;
+  border-radius:5px;
+  padding:40px 24px 60px;
+  position:relative;
+  z-index:1;
+  top:-30px;
+}
+.signinPanel .title{
+  font-size:16px;
+  color:#333;
+  line-height:23px;
+  text-align:center;
+  font-weight:600;
+}
+.signinPanel .ruleBar{
+  padding-top:16px;
+}
+.ruleBar .ruleTitle{
+  font-size:13px;
+  color:#333;
+  line-height:18px;
+  font-weight:600;
+}
+.ruleBar .ruletext{
+  font-size:13px;
+  color:#333;
+  line-height:18px;
+}
+.watchbar{
+  text-align:center;
+  padding-top:120px;
+}
+.watchbar .watchtip{
+  font-size:11px;
+  color:#820000;
+  line-height:15px;
+  padding-top:12px;
+}
+.tutubar {
+  text-align:center;
+  position:relative;
+  z-index:9;
+}
+.tutubar .tutu{
+  width:187px;
+  height:223px;
+}
